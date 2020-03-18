@@ -1,4 +1,6 @@
 <launch>
   <node name="controller" pkg="main_controller" type="controller.py" />
   <!--node name="remote" pkg="main_controller" type="remote.py" /-->
+
+  <rosparam command="load" file="/home/pi/code/secret.yaml" />
 </launch>

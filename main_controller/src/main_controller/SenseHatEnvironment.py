@@ -11,7 +11,7 @@ except:
 
 class SenseHatEnvironment():
     def show_on_led(self, message, color):
-        if g_sh is not None and message != '':
+        if g_sh is not None and message != '' and message is not None:
             g_sh.show_message(message, scroll_speed=0.1, text_colour=color)
 
     def get_humidity(self):
